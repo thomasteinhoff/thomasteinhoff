@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 2vw;
+    background: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.leftcontainer,
+.rightcontainer {
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: 0; /* Remove spacing between containers */
+}
+
+.leftcontainer {
+    max-width: 300px;
+    width: 100%;
+}
+
+.rightcontainer {
+    flex: 1;
+    min-width: 300px;
+    width: 100%;
+}
+
+.profilecontainer img {
+    max-width: 100%;
+    margin: 5px auto;
+}
+
+.iconsframe img,
+.ctticons img {
+    width: 100%;
+    max-width: 35px;
+}
+
+/* cards of where i worked */
+.xpframe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.jobcard {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-sizing: border-box;
+    display: flex; /* Ensure content inside the card is aligned */
+    align-items: center; /* Vertically center content */
+}
+
+.jobcard img {
+    width: 100px;
+    margin-right: 20px;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.jobcard div {
+    display: flex;
+    flex-direction: column;
+}
+
+.jobcard h2, 
+.jobcard h3, 
+.jobcard h4 {
+    margin: 0;
+}
+
+/* Ensure text fits within the height of the image */
+.jobcard h4 {
+    margin-top: auto;
+}
+
+.about p {
+    text-align: justify;
+    line-height: 1.2rem;
+    margin-right: 35px;
+}
+
+.about {
+    padding-top: 20px;
+}
+
+.about h2 {
+    margin: 10px 0;
+}
+
+.about p {
+    margin: 10px 0 25px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftcontainer,
+    .rightcontainer {
+        max-width: none;
+        width: 100%;
+    }
+
+    .jobcard {
+        min-width: 100%;
+    }
+
+    .about p {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .jobcard img {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    .iconsframe img,
+    .ctticons img {
+        max-width: 25px;
+    }
+
+    .about p {
+        line-height: 1rem;
+    }
+}
