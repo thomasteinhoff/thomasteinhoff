@@ -1,3 +1,5 @@
+* {box-sizing: border-box}
+
 body {
     margin: 0;
     padding: 2vw;
@@ -17,9 +19,9 @@ body {
 .rightcontainer {
     background: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 40px;
     box-sizing: border-box;
-    margin: 0; /* Remove spacing between containers */
+    padding: 40px;
+    margin: 0;
 }
 
 .leftcontainer {
@@ -44,7 +46,6 @@ body {
     max-width: 35px;
 }
 
-/* cards of where i worked */
 .xpframe {
     display: flex;
     flex-wrap: wrap;
@@ -58,14 +59,14 @@ body {
     background: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     box-sizing: border-box;
-    display: flex; /* Ensure content inside the card is aligned */
-    align-items: center; /* Vertically center content */
+    display: flex;
+    align-items: center;
 }
 
 .jobcard img {
     width: 100px;
     margin-right: 20px;
-    flex-shrink: 0; /* Prevent image from shrinking */
+    flex-shrink: 0;
 }
 
 .jobcard div {
@@ -79,7 +80,6 @@ body {
     margin: 0;
 }
 
-/* Ensure text fits within the height of the image */
 .jobcard h4 {
     margin-top: auto;
 }
@@ -90,17 +90,9 @@ body {
     margin-right: 35px;
 }
 
-.about {
-    padding-top: 20px;
-}
-
-.about h2 {
-    margin: 10px 0;
-}
-
-.about p {
-    margin: 10px 0 25px;
-}
+.about {padding-top: 20px}
+.about h2 {margin: 10px 0}
+.about p {margin: 10px 0 25px}
 
 @media (max-width: 768px) {
     .main-container {
